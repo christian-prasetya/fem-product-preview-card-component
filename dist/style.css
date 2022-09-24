@@ -1,3 +1,23 @@
+:root {
+  --clr-primary-white: hsl(0, 0%, 100%);
+  --clr-primary-cream: hsl(30, 38%, 92%);
+  --clr-neutral-cyan: hsl(158, 36%, 37%);
+  --clr-neutral-dark: hsl(212, 21%, 14%);
+  --clr-neutral-grayish: hsl(228, 12%, 48%);
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -31,6 +51,11 @@ body {
 /* Set core body defaults */
 body {
   text-rendering: optimizeSpeed;
+  background-color: var(--clr-primary-cream);
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
 }
 
 /* A elements that don't have a class get default styles */
@@ -62,23 +87,4 @@ svg {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-:root {
-  --clr-primary-white: hsl(0, 0%, 100%);
-  --clr-primary-cream: hsl(30, 38%, 92%);
-  --clr-neutral-cyan: hsl(158, 36%, 37%);
-  --clr-neutral-dark: hsl(212, 21%, 14%);
-  --clr-neutral-grayish: hsl(228, 12%, 48%);
-}
-
-.flex-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.flex-row {
-  display: flex;
-  align-items: center;
 }/*# sourceMappingURL=style.css.map */

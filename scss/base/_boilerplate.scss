@@ -1,3 +1,7 @@
+@use 'color' as c;
+@use 'fonts' as f;
+@use '../util' as u;
+
 /* Box sizing rules */
 *,
 *::before,
@@ -31,6 +35,11 @@ body {
 /* Set core body defaults */
 body {
   text-rendering: optimizeSpeed;
+  background-color: c.$body-bg;
+  display: flex;
+  justify-content: center;
+  font-family: f.$font-primary;
+  font-size: f.$size-primary;
 }
 
 /* A elements that don't have a class get default styles */

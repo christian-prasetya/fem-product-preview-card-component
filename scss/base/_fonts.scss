@@ -1,2 +1,9 @@
+@use '../util' as u;
+
 $font-primary: 'Montserrat', sans-serif;
 $font-header: 'Fraunces', serif;
+
+$size-header: u.rem(32);
+$size-primary: u.rem(14);
+$size-medium: u.rem(13);
+$size-small: u.rem(12);
