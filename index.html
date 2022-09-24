@@ -19,38 +19,47 @@
   <link rel="stylesheet" href="dist/style.css">
 
   <title>Frontend Mentor | Product preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
 
-  Preview
+  <main>
 
-  Gabrielle Essence Eau De Parfum
+    <div class="card__image">
+      <img src="images/image-product-mobile.jpg" alt="Perfume Bottle" class="card__image-mobile">
+      <img src="images/image-product-desktop.jpg" alt="Perfume Bottle" class="card__image-desktop">
+    </div>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge,
-  Perfumer-Creator for the House of CHANEL.
+    <div class="card__info">
+      <p class="card__info-small">
+        Preview
+      </p>
+      <h1 class="card__info-title">
+        Gabrielle Essence Eau De Parfum
+      </h1>
+      <p class="card__info-subtitle">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.
+      </p>
+      <div class="card__info-pricing flex-row">
+        <p class="pricing-large">
+          $149.99
+        </p>
+        <p class="pricing-discount">
+          $169.99
+        </p>
+      </div>
+      <button class="card__info-btn">
+        <img src="images/icon-cart.svg" alt="cart icon" class='icon'> Add to Cart
+      </button>
+    </div>
 
-  $149.99
-  $169.99
+  </main>
 
-  Add to Cart
-
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </footer>
 </body>
 
 </html>
