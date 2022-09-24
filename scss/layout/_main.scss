@@ -1,0 +1,132 @@
+@use '../util' as u;
+@use '../base' as b;
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: u.rem(343);
+  margin-top: u.rem(28);
+  margin-bottom: u.rem(28);
+  background-color: b.$card-bg;
+  border-radius: u.rem(10);
+
+  @include u.breakpoint(large) {
+    width: u.rem(600);
+    height: u.rem(450);
+    margin-top: u.rem(175);
+    flex-direction: row;
+  }
+
+  .card__image {
+
+    img {
+      border-top-left-radius: u.rem(10);
+      border-top-right-radius: u.rem(10);
+
+      @include u.breakpoint(large) {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: u.rem(10);
+      }
+    }
+
+    &-desktop {
+      display: none;
+
+      @include u.breakpoint(large) {
+        display: block;
+        width: u.rem(300);
+      }
+    }
+
+    &-mobile {
+
+      @include u.breakpoint(large) {
+        display: none;
+      }
+    }
+  }
+
+}
+
+.card__info {
+  padding: u.rem(27) u.rem(25);
+
+  @include u.breakpoint(large) {
+    padding: u.rem(32);
+    width: u.rem(300);
+  }
+
+  &-small {
+    font-size: b.$size-small;
+    font-weight: 500;
+    letter-spacing: u.rem(6);
+    margin-bottom: u.rem(19);
+    text-transform: uppercase;
+    color: b.$text-primary;
+    opacity: 0.5;
+  }
+
+  &-title {
+    font-family: b.$font-header;
+    font-size: b.$size-header;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: u.rem(26);
+    padding-right: u.rem(16);
+
+    @include u.breakpoint(large) {
+      margin-bottom: u.rem(34);
+    }
+  }
+
+  &-subtitle {
+    font-size: b.$size-primary;
+    color: b.$text-primary;
+    opacity: .5;
+    line-height: 1.65;
+    margin-bottom: u.rem(32);
+
+    @include u.breakpoint(large) {
+      margin-bottom: u.rem(38);
+    }
+  }
+
+  &-pricing {
+    margin-bottom: u.rem(21);
+    gap: u.rem(21);
+
+    @include u.breakpoint(large) {
+      margin-bottom: u.rem(30);
+    }
+
+    .pricing-large {
+      font-size: b.$size-header;
+      font-family: b.$font-header;
+      color: b.$button-bg;
+      font-weight: 700;
+    }
+
+    .pricing-discount {
+      font-size: b.$size-small;
+      color: b.$text-primary;
+      opacity: .5;
+      font-weight: 500;
+      text-decoration: line-through;
+    }
+  }
+
+  .card__info-btn {
+    width: 100%;
+    justify-content: center;
+    padding: u.rem(16);
+    background-color: b.$button-bg;
+    border: 1px solid b.$button-bg;
+    border-radius: u.rem(10);
+    color: b.$text-white;
+    gap: u.rem(10);
+
+    &:focus:active {
+      background-color: b.$active;
+    }
+  }
+}

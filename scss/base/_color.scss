@@ -3,6 +3,7 @@
   --clr-primary-cream: hsl(30, 38%, 92%);
 
   --clr-neutral-cyan: hsl(158, 36%, 37%);
+  --clr-nutral-dark-cyan: hsl(156, 42%, 18%);
   --clr-neutral-dark: hsl(212, 21%, 14%);
   --clr-neutral-grayish: hsl(228, 12%, 48%);
 }
@@ -10,6 +11,7 @@
 $body-bg: var(--clr-primary-cream);
 $card-bg: var(--clr-primary-white);
 $button-bg: var(--clr-neutral-cyan);
+$active: var(--clr-nutral-dark-cyan);
 
 $text-primary: var(--clr-neutral-grayish);
 $text-heading: var(--clr-neutral-dark);

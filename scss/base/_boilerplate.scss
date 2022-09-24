@@ -37,7 +37,8 @@ body {
   text-rendering: optimizeSpeed;
   background-color: c.$body-bg;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   font-family: f.$font-primary;
   font-size: f.$size-primary;
 }
