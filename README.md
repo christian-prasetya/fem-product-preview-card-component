@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Go to my solution site](https://your-solution-url.com)
-- Live Site URL: [Go to the live site](https://your-live-site-url.com)
+- Solution URL: [Go to my solution site](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub/responsive-mobile-first-product-preview-card-component-62eJ4-hhic)
+- Live Site URL: [Go to the live site](https://christian-prasetya.github.io/fem-product-preview-card-component/)
 
 ## My process
 
