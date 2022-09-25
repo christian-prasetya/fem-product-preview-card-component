@@ -205,7 +205,7 @@ main .card__image-desktop {
   color: var(--clr-primary-white);
   gap: 0.625rem;
 }
-.card__info .card__info-btn:focus:active {
+.card__info .card__info-btn:hover:focus {
   background-color: var(--clr-nutral-dark-cyan);
 }
 

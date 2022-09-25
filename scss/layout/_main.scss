@@ -123,7 +123,7 @@ main {
     color: b.$text-white;
     gap: u.rem(10);
 
-    &:focus:active {
+    &:hover:focus {
       background-color: b.$active;
     }
   }
