@@ -12,16 +12,18 @@ main {
 
   @include u.breakpoint(large) {
     width: u.rem(600);
-    height: u.rem(450);
+    // height: u.rem(450);
     margin-top: u.rem(175);
     flex-direction: row;
   }
 
   .card__image {
+    height: 100%;
 
     img {
       border-top-left-radius: u.rem(10);
       border-top-right-radius: u.rem(10);
+      height: 100%;
 
       @include u.breakpoint(large) {
         border-top-right-radius: 0;
@@ -94,10 +96,6 @@ main {
   &-pricing {
     margin-bottom: u.rem(21);
     gap: u.rem(21);
-
-    @include u.breakpoint(large) {
-      margin-bottom: u.rem(30);
-    }
 
     .pricing-large {
       font-size: b.$size-header;

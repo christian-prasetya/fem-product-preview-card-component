@@ -102,14 +102,17 @@ main {
 @media (min-width: 56.25em) {
   main {
     width: 37.5rem;
-    height: 28.125rem;
     margin-top: 10.9375rem;
     flex-direction: row;
   }
 }
+main .card__image {
+  height: 100%;
+}
 main .card__image img {
   border-top-left-radius: 0.625rem;
   border-top-right-radius: 0.625rem;
+  height: 100%;
 }
 @media (min-width: 56.25em) {
   main .card__image img {
@@ -178,11 +181,6 @@ main .card__image-desktop {
 .card__info-pricing {
   margin-bottom: 1.3125rem;
   gap: 1.3125rem;
-}
-@media (min-width: 56.25em) {
-  .card__info-pricing {
-    margin-bottom: 1.875rem;
-  }
 }
 .card__info-pricing .pricing-large {
   font-size: 2rem;
