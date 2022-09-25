@@ -161,22 +161,12 @@ main .card__image-desktop {
   margin-bottom: 1.625rem;
   padding-right: 1rem;
 }
-@media (min-width: 56.25em) {
-  .card__info-title {
-    margin-bottom: 2.125rem;
-  }
-}
 .card__info-subtitle {
   font-size: 0.875rem;
   color: var(--clr-neutral-grayish);
   opacity: 0.5;
   line-height: 1.65;
   margin-bottom: 2rem;
-}
-@media (min-width: 56.25em) {
-  .card__info-subtitle {
-    margin-bottom: 2.375rem;
-  }
 }
 .card__info-pricing {
   margin-bottom: 1.3125rem;

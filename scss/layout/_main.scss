@@ -12,7 +12,6 @@ main {
 
   @include u.breakpoint(large) {
     width: u.rem(600);
-    // height: u.rem(450);
     margin-top: u.rem(175);
     flex-direction: row;
   }
@@ -76,9 +75,6 @@ main {
     margin-bottom: u.rem(26);
     padding-right: u.rem(16);
 
-    @include u.breakpoint(large) {
-      margin-bottom: u.rem(34);
-    }
   }
 
   &-subtitle {
@@ -88,9 +84,6 @@ main {
     line-height: 1.65;
     margin-bottom: u.rem(32);
 
-    @include u.breakpoint(large) {
-      margin-bottom: u.rem(38);
-    }
   }
 
   &-pricing {
